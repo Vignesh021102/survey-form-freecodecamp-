@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>survey form</title>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+  />
+</head>
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+    <div>
+      <label id="name-label"> 
+      <p><strong>Name</strong></p>  
+      <input class="input" id="name" placeHolder="Enter your name" type="text" required/>
+      </label>
+    </div>
+    <div>
+      <label id="email-label">   <p> <strong>Email</strong> </p>
+        <input class="input" id="email" placeHolder="Enter your Email" type="Email" required/> 
+        </label>
+    </div>
+    <div>
+      <label id="number-label">  <p ><strong> Age </strong> (optional)</p> 
+          <input class="input" id="number" placeHolder="age" type="number" min=18 max=100/> 
+          </label> 
+    </div>   
+    <div>
+      <p><strong>Which option best describes your current role ?</strong></p>
+      <div class="Display">
+        <h3 class="option" >Select your current role</h3>
+      <div class="options">
+        <h3 onclick="changevalue1(event)" >Student</h3>
+        <h3 onclick="changevalue1(event)">Full time job</h3>
+        <h3 onclick="changevalue1(event)" >Full time learner</h3>
+        <h3 onclick="changevalue1(event)" >Prefer not to say</h3>
+        <h3 onclick="changevalue1(event)" >Others</h3>
+      </div>
+      </div> 
+
+    </div>
+    <div>
+      <p><strong>Would you recommend freeCampCode to a friend ?</strong></p>
+      <div id="ratio">
+      <label for="Definitely">
+        <input type="radio" value="Definitly"  name="Definitely-Maybe-Notsure" />Definitely
+      </label>
+       <label for="Maybe">
+        <input type="radio" value="Maybe" name="Definitely-Maybe-Notsure" />Maybe
+      </label>
+       <label for="Not sure">
+        <input type="radio" value="Not sure" name="Definitely-Maybe-Notsure" />Not sure
+      </label></div>
+    </div>   
+    <div>
+      <p><strong>What is your favorite feature of freeCodeCamp ?</strong></p>
+      <div class="Display">
+        <h3 class="option">Select an option</h3>
+      <div class="options">
+        <h3 onclick="changevalue2(event)" >Challenges</h3>
+        <h3 onclick="changevalue2(event)"  >Projects</h3>
+        <h3 onclick="changevalue2(event)"  >Community</h3>
+        <h3 onclick="changevalue2(event)"  >Open source</h3>
+        <h3 onclick="changevalue2(event)"  >Prefer not to say</h3>
+        <h3 onclick="changevalue2(event)"  >Others</h3>
+      </div>
+      </div> 
+    </div>
+    <div>
+             <p><strong>What would you like to see improved ?</strong><br>(check all that apply)</p>
+      <div id="check">
+     
+       <label> <input type="checkbox" value="Front-end Projects"/>Front-end Projects
+      </label>
+     
+        <label> <input type="checkbox" value="Back-end Projects"/>Back-end Projects
+      </label>
+     
+       <label>  <input type="checkbox" value="Data Visualization"/>Data Visualization
+      </label>
+     
+        <label> <input type="checkbox" value="Challenges" />Challenges
+      </label>
+      
+      <label>  <input type="checkbox" value="Open Source Community"/>Open Source Community
+      </label>
+     
+        <label> <input type="checkbox" value="Gitter help rooms"/>Gitter help rooms
+      </label>
+      
+       <label> <input type="checkbox" value="Videos"/>Videos
+      </label>
+      
+       <label> <input type="checkbox" value="City Meetups"/>City Meetups
+      </label>
+      
+       <label> <input type="checkbox" value="Wiki" />Wiki
+      </label>
+    
+        <label>  <input type="checkbox" value="Forum"/>Forum
+      </label>
+     
+         <label> <input type="checkbox" value="Additional Courses"/>Additional Courses
+      </label>
+      </div>
+    </div>
+    <div>
+       <p><strong>Any comments or suggestions ?</strong></p>
+      <textarea id="textarea" type="text" placeholder=" Enter your comment here..."></textarea>
+      <br>
+      <button id="submit" class="btn">submit</button>
+    </div>  
+    </form>
+  
+   <script src="script.js" ></script>
+</body>
+</html>
